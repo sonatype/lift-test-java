@@ -17,7 +17,7 @@ public class Hello {
         int test_lift = (int) Math.random();
         String s = String.valueOf(test_lift);
         System.out.println(s);
-        if(s == loc.city)
+        if(test_lift == test_lift)
             System.out.println("true");
     }
 }
