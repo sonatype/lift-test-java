@@ -1,19 +1,23 @@
 package lift_test;
 
 public class Hello {
-    static String[] arr = null;
+    public class Location {
+        String city;
+        String state;
+    }
 
-    public static void foo(String[] x) {
-        System.out.println(x[0]);
+    public static void foo(Location x) {
+        System.out.println(x.state);
     }
 
     public static void main(String[] args) {
-        foo(arr);
+        Location loc = null;
+        foo(loc);
         System.out.println("Hello World");
         int test_lift = (int) Math.random();
         String s = String.valueOf(test_lift);
         System.out.println(s);
-        if(s == arr[0])
+        if(s == loc.city)
             System.out.println("true");
     }
 }
