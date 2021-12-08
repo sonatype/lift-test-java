@@ -1,5 +1,16 @@
 package lift_test;
 
+import java.rmi.Naming;
+import java.rmi.registry.LocateRegistry;
+
+import java.rmi.Remote;
+import java.rmi.RemoteException;
+
+interface TestService extends Remote {
+    boolean register(String name) throws RemoteException;
+    void check(Object obj) throws RemoteException;
+ }
+
 public class Hello {
     public class Location {
         String city;
