@@ -28,7 +28,5 @@ public class Hello {
         int test_lift = (int) Math.random();
         String s = String.valueOf(test_lift);
         System.out.println(s);
-        if(test_lift == test_lift)
-            System.out.println("true");
     }
 }
